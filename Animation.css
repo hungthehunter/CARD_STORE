@@ -1,0 +1,14 @@
+
+@keyframes SliderInLeft {
+    from{
+transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+.heading-1{
+animation: SliderInLeft 1s ease-in 0s 1 normal both;
+transform: translate(-150px);
+}
