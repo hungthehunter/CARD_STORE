@@ -13,6 +13,15 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NVDIA</title>
+    <style>
+        #user-email {
+            font-size: 18px; /* Kích thước chữ */
+            font-weight: bold; /* Độ đậm của chữ */
+            color: #3498db; /* Màu chữ */
+            text-decoration: underline; /* Gạch chân dưới */
+            cursor: pointer; /* Con trỏ khi di chuột qua */
+        }
+    </style>
 </head>
 
 <body>
@@ -29,11 +38,14 @@
               </div>
               <!-- Check if the path is one of the specified ones -->
               <div class="nav-tool-container">
+                <div>
+                    <span id="user-email" style="color: black;"></span>
+                </div>
                 <span class="cart-counter">0</span>
                 <div id="cart" class="cart">
-                <i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i>
+                <a href="HistoryBuying.html"><i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i></a>
                 </div>
-                <i class="fa-solid fa-user" style="color: black;"></i>
+                <i class="fa-solid fa-user" style="color: black;" onclick="toggleLogin()"></i>
                 <div id="sidebar" class="sidebar"></div>
               </div>
             </div>
@@ -497,6 +509,8 @@
     </div>
     <script src="./NVDIA_STORE_MAIN.js"></script>
 
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
