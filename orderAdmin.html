@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1acf2d22a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style_OrderAdmin.css">
-    <title>Đơn hàng</title>
+    <title>NVIDIA STORE</title>
 </head>
 <body>
     <head>
@@ -35,32 +35,32 @@
 <main>
     <aside id="mySidebar">
         <ul>
-            <li><a onclick="w3_close()">Đóng &times;</a></li>
-            <li><a class="active">Đơn hàng</a></li>
-            <li><a href="userAdmin.html">Người dùng</a></li>
+            <li><a onclick="w3_close()">Close &times;</a></li>
+            <li><a class="active">Order</a></li>
+            <li><a href="userAdmin.html">User</a></li>
         </ul>
     </aside>
     <section id="main">
         <button id="openNav" class="menu-button" onclick="w3_open()">&#9776; Menu</button>
-        <h1>Đơn Hàng</h1>
+        <h1>Order List</h1>
         <!--product list-->
         <div class="filter">
             <div class="date">
-                <label for="start">Từ ngày: </label>
+                <label for="start">From date: </label>
                     <input type="date" id="start" name="start" value="2023-11-24" min="2018-01-01" max="2023-12-31">
-                    <label for="start">đến </label>
+                    <label for="start">to </label>
                     <input type="date" id="end" name="end" value="2023-11-30" min="2018-01-01" max="2023-12-31">
             </div>
-            <a href="orderAdmin.html" class="show"></i>Xem</a>
+            <a href="orderAdmin.html" class="show"></i>Watch</a>
         </div>
         <table>
             <!-- Header Row -->
             <tr class="title">
                 <th>ID</th>
-                <th>Đơn hàng</th>
-                <th>Địa chỉ</th>
-                <th>Thành tiền</th>
-                <th>Trạng thái</th>
+                <th>Order</th>
+                <th>Address</th>
+                <th>Total Amount</th>
+                <th>Status</th>
             </tr>
     
             <!-- Product Rows -->
@@ -70,7 +70,7 @@
                     <a href="orderDetail.html">
                         <img src="./img/screen.webp" alt="Laptop">
                         <div>
-                            <p>Screen Viewsonic VA2432-H-W 24" IPS 100Hz viền mỏng</p>
+                            <p>Viewsonic VA2432-H-W 24" IPS 100Hz Thin Bezel Monitor</p>
                             <p>GeForce</p>
                             <p class="another"></p>
                         </div>
@@ -78,7 +78,7 @@
                 </td>
                 <td>123 Main Street</td>
                 <td>$16.199</td>
-                <td class="state">Đang giao</td>
+                <td class="state">Received</td>
             </tr>
     
             <tr class="product">
@@ -95,7 +95,7 @@
                 </td>
                 <td>456 Oak Avenue</td>
                 <td>$18.199</td>
-                <td class="state">Đã giao</td>
+                <td class="state">Received</td>
             </tr>
     
             <tr class="product">
@@ -112,7 +112,7 @@
                 </td>
                 <td>789 Pine Lane</td>
                 <td>$17.899</td>
-                <td class="state">Đã nhận</td>
+                <td class="state">Received</td>
             </tr>
         </table>
         
